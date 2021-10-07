@@ -62,8 +62,6 @@ function fetchData(e){
         response.json()
         )
         .then(data=>{
-            console.log(e.url);
-            console.log(data.ip);
             if (data.ip == undefined){
                 search.value = "Unvalid input"
             }
@@ -79,8 +77,6 @@ function fetchData(e){
         isp.textContent = data.isp
         let lat = data.location.lat
         let lng = data.location.lng
-        console.log(lat);
-        console.log(lng);
         
         marker.setLatLng([lat, lng])
         map.setView([lat, lng], 13);
