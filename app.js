@@ -47,7 +47,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 let myIcon = L.icon({
     iconUrl: 'images/icon-location.svg',
     iconSize:[50,50],
-    iconAnchor:[25,0]
+    iconAnchor:[25,50]
 })
 let marker = L.marker([0, 0],{
     icon:myIcon
